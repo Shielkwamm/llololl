@@ -6,7 +6,7 @@
     "dev": "next",
     "debug": "NODE_OPTIONS='--inspect' next",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "typecheck": "tsc --p src/tsconfig.json # in case of error with @vulcanjs/* package, check that src/types (eg simpl-schema) are up-to-date with vulcan-npm",
     "typecheck-watch": "tsc --p src/tsconfig.json -w",
     "postbuild": "next-sitemap --config vulcan-next-sitemap.js",
